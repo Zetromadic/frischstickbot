@@ -39,6 +39,12 @@ client.on('message', message=> {
 
 
     switch(args[0]){
+
+        case 'youtube':
+            message.delete();
+            message.channel.send('https://www.youtube.com/channel/UCUwAQMw3gBrzC0tEsaVykww');
+        break;
+
         case 'info':
             if(args[1] === 'version'){
                 message.delete();
@@ -159,11 +165,10 @@ client.on('message', message=> {
             let helpEmbed = new Discord.MessageEmbed()
             .setTitle('Help')
             .setColor('0x00FFC7')
+            .addField('RULES', 'Make sure you are following all the rules!!')
             .addField('!report', 'Followed by a user and reason will report a user.')
-            .addField('!youtube', 'Links you to the offical Zetromadic YouTube channel.')
-            .addField('!twitch', 'Links you to the offical Zetromadic Twitch channel.')
-            .addField('!image', 'Links a random stock image (ONLY IN THE #😂-memes CHAT).')
-            .addField('!info', 'Can be followed by "version" "ping" "uptime"');
+            .addField('!youtube', 'Links you to the offical Connor Frisch YouTube channel.')
+            .addField('!info', 'Can be followed by "version" "ping" "uptime" for info.');
 
             message.channel.send(helpEmbed);
 
