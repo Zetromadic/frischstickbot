@@ -1,0 +1,23 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Connor Frisch",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "discord.js": "^12.2.0",
+    "discord.js-commando": "^0.10.0",
+    "fs": "0.0.1-security",
+    "ms": "^2.1.2",
+    "opusscript": "0.0.7",
+    "profanities": "^2.13.0",
+    "request": "^2.88.2",
+    "save": "^2.4.0",
+    "ytdl-core": "^2.1.3"
+  }
+}
